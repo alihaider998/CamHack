@@ -9,8 +9,8 @@ if [[ ! -d "$BASE_DIR/auth" ]]; then
 fi
 
 CONTAINER="zphisher"
-IMAGE="htrtech/zphisher:latest"
-IMG_MIRROR="ghcr.io/htr-tech/zphisher:latest"
+IMAGE="ALIHAIDER998/zphisher:latest"
+IMG_MIRROR="ghcr.io/ALIHAIDER998/zphisher:latest"
 MOUNT_LOCATION=${BASE_DIR}/auth
 check_container=$(docker ps --all --format "{{.Names}}")
 
