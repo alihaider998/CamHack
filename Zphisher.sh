@@ -3,7 +3,7 @@
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	Ali Haider 
 ##   Version 	: 	2.3.5
-##   Github 	: 	https://github.com/ALIHAIDER998/CamHack
+##   Github 	: 	https://github.com/ALIHAIDER998/Zphisher
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
