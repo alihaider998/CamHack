@@ -32,7 +32,7 @@ Version: ${_VERSION}
 Architecture: ${_ARCH}
 Maintainer: ALIHAIDER998
 Depends: ${_depend}
-Homepage: https://github.com/htr-tech/zphisher
+Homepage: https://github.com/ALIHAIDER998/zphisher
 Description: An automated phishing tool with 30+ templates. This Tool is made for educational purpose only !
 CONTROL_EOF
 
