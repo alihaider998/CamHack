@@ -196,13 +196,16 @@ check_status() {
 ## Banner
 banner() {
 	cat <<- EOF
-${ORANGE}  _____   ___   __  __ _   _    _    ____ _  __
-${ORANGE} / ____| / _ \ |  \/  | | | |  / \  / ___| |/ /
-${ORANGE}| |     | | | || |\/| | |_| | / _ \| |   | ' / 
-${ORANGE}| |___  | |_| || |  | |  _  |/ ___ \ |___| . \ 
-${ORANGE} \_____| \___/ |_|  |_|_| |_/_/   \_\____|_|\_\    ${RED}Version : ${__version__}
+	
+	${ORANGE}
+	${ORANGE}  _____   ___   __  __ _   _    _    ____ _  __
+	${ORANGE} / ____| / _ \ |  \/  | | | |  / \  / ___| |/ /
+	${ORANGE}| |     | | | || |\/| | |_| | / _ \| |   | ' / 
+	${ORANGE}| |___  | |_| || |  | |  _  |/ ___ \ |___| . \ 
+	${ORANGE} \_____| \___/ |_|  |_|_| |_/_/   \_\____|_|\_\    ${RED}Version : ${__version__}
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+
 	EOF
 }
 
@@ -339,8 +342,7 @@ about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
 		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
-		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/htr-tech
-		${GREEN} Social   ${RED}:  ${CYAN}https://tahmidrayat.is-a.dev
+		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/alihaider998
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
