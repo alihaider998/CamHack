@@ -96,6 +96,29 @@ REDBG="$(printf '\033[41m')"  GREENBG="$(printf '\033[42m')"  ORANGEBG="$(printf
 MAGENTABG="$(printf '\033[45m')"  CYANBG="$(printf '\033[46m')"  WHITEBG="$(printf '\033[47m')" BLACKBG="$(printf '\033[40m')"
 RESETBG="$(printf '\e[0m\n')"
 
+## Banner
+banner() {
+	cat <<- EOF
+${ORANGE}  _____   ___   __  __ _   _    _    ____ _  __
+${ORANGE} / ____| / _ \ |  \/  | | | |  / \  / ___| |/ /
+${ORANGE}| |     | | | || |\/| | |_| | / _ \| |   | ' / 
+${ORANGE}| |___  | |_| || |  | |  _  |/ ___ \ |___| . \ 
+${ORANGE} \_____| \___/ |_|  |_|_| |_/_/   \_\____|_|\_\ ${RED}Version : ${__version__}
+
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+	EOF
+}
+
+## Small Banner
+banner_small() {
+	cat <<- EOF
+${BLUE}
+${BLUE}  ░█▀▀░█▀█░█▄█░█░█░█▀█░█▀▀░█▄█
+${BLUE}  ░█░░░█▀█░█░█░█▀█░█▀█░█░░░█░█
+${BLUE}  ░▀▀▀░▀░▀░▀░▀░▀░▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
+	EOF
+}
+
 ## Directories
 BASE_DIR=$(realpath "$(dirname "$BASH_SOURCE")")
 
