@@ -219,15 +219,12 @@ check_status() {
 ## Banner
 banner() {
 	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : ${__version__}
+		${ORANGE}		
+		${ORANGE}  _____   ___   __  __ _   _    _    ____ _  __
+		${ORANGE} / ____| / _ \ |  \/  | | | |  / \  / ___| |/ /
+		${ORANGE}| |     | | | || |\/| | |_| | / _ \| |   | ' / 
+		${ORANGE}| |___  | |_| || |  | |  _  |/ ___ \ |___| . \ 
+		${ORANGE} \_____| \___/ |_|  |_|_| |_/_/   \_\____|_|\_\                 ${RED}Version : ${__version__}
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by alihaider998 (ali.haider)${WHITE}
 	EOF
@@ -236,10 +233,10 @@ banner() {
 ## Small Banner
 banner_small() {
 	cat <<- EOF
-		${BLUE}
-		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
-		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
-		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
+		${BLUE}	
+		${BLUE}  ░█▀▀░█▀█░█▄█░█░█░█▀█░█▀▀░█▄█
+		${BLUE}  ░█░░░█▀█░█░█░█▀█░█▀█░█░░░█░█
+		${BLUE}  ░▀▀▀░▀░▀░▀░▀░▀░▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
 	EOF
 }
 
