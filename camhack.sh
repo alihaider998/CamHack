@@ -1,9 +1,9 @@
 #!/bin/bash
 
-##   Zphisher 	: 	Automated Phishing Tool
+##   camhack 	: 	Automated Phishing Tool
 ##   Author 	: 	Ali Haider 
 ##   Version 	: 	2.3.5
-##   Github 	: 	https://github.com/ALIHAIDER998/Zphisher
+##   Github 	: 	https://github.com/alihaider998/camhack
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
