@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Make Deb Package for Zphisher (^.^)
-_PACKAGE=zphisher
+# Make Deb Package for Camhack (^.^)
+_PACKAGE=camhack
 _VERSION=2.3.5
 _ARCH="all"
 PKG_NAME="${_PACKAGE}_${_VERSION}_${_ARCH}.deb"
@@ -30,9 +30,9 @@ cat <<- CONTROL_EOF > ./build_env/DEBIAN/control
 Package: ${_PACKAGE}
 Version: ${_VERSION}
 Architecture: ${_ARCH}
-Maintainer: ALIHAIDER998
+Maintainer: alihaider998
 Depends: ${_depend}
-Homepage: https://github.com/ALIHAIDER998/zphisher
+Homepage: https://github.com/alihaider998/camhack
 Description: An automated phishing tool with 30+ templates. This Tool is made for educational purpose only !
 CONTROL_EOF
 
@@ -46,6 +46,6 @@ chmod 755 ./build_env/DEBIAN
 chmod 755 ./build_env/DEBIAN/{control,prerm}
 cp -fr scripts/launch.sh ./build_env/$_bin_dir/$_PACKAGE
 chmod 755 ./build_env/$_bin_dir/$_PACKAGE
-cp -fr .github/ .sites/ LICENSE README.md zphisher.sh ./build_env/$_opt_dir
+cp -fr .github/ .sites/ LICENSE README.md camhack.sh ./build_env/$_opt_dir
 dpkg-deb --build ./build_env ${PKG_NAME}
 rm -fr ./build_env
