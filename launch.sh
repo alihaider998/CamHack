@@ -9,7 +9,7 @@ else
 fi
 
 if [[ $1 == '-h' || $1 == 'help' ]]; then
-	echo "To run Zphisher type \`zphisher\` in your cmd"
+	echo "To run Camhack type \`camhack\` in your cmd"
 	echo
 	echo "Help:"
 	echo " -h | help : Print this menu & Exit"
