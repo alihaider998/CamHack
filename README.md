@@ -1,4 +1,4 @@
-<!-- Zphisher -->
+<!-- camhack -->
 
 <p align="center">
   <img src=".github/misc/logo.png">
@@ -53,16 +53,16 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 
 - Just, Clone this repository -
   ```
-  git clone --depth=1 https://github.com/ALIHAIDER998/zphisher.git
+  git clone --depth=1 https://github.com/alihaider998/camhack.git
   ```
 
-- Now go to cloned directory and run `zphisher.sh` -
+- Now go to cloned directory and run `camhack.sh` -
   ```
-  $ cd zphisher
-  $ bash zphisher.sh
+  $ cd camhack
+  $ bash camhack.sh
   ```
 
-- On first launch, It'll install the dependencies and that's it. ***Zphisher*** is installed.
+- On first launch, It'll install the dependencies and that's it. ***camhack*** is installed.
 
 ##
 
@@ -70,21 +70,21 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 You can easily install zphisher in Termux by using tur-repo
 ```
 $ pkg install tur-repo
-$ pkg install zphisher
-$ zphisher
+$ pkg install camhack
+$ camhack
 ```
 
 ##
 
 <p align="left">
-  <a href="https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/htr-tech/zphisher.git&tutorial=README.md" target="_blank"><img src="https://gstatic.com/cloudssh/images/open-btn.svg"></a>
+  <a href="https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/alihaider998/camhack.git&tutorial=README.md" target="_blank"><img src="https://gstatic.com/cloudssh/images/open-btn.svg"></a>
 </p>
 
 ##
 
 ### Installation via ".deb" file
 
-- Download `.deb` files from the [**Latest Release**](https://github.com/ALIHAIDER998/zphisher/releases/latest)
+- Download `.deb` files from the [**Latest Release**](https://github.com/alihaider998/camhack/releases/latest)
 - If you are using ***termux*** then download the `*_termux.deb`
 
 - Install the `.deb` file by executing
@@ -104,23 +104,23 @@ $ zphisher
 - Docker Image Mirror:
   - **DockerHub** : 
     ```
-    docker pull ALIHAIDER998/zphisher
+    docker pull alihaider998/camhack
     ```
   - **GHCR** : 
     ```
-    docker pull ghcr.io/ALIHAIDER998/zphisher:latest
+    docker pull ghcr.io/alihaider998/camhack:latest
     ```
 
-- By using the wrapper script [**run-docker.sh**](https://raw.githubusercontent.com/ALIHAIDER998/zphisher/master/run-docker.sh)
+- By using the wrapper script [**run-docker.sh**](https://raw.githubusercontent.com/alihaider998/camhack/master/run-docker.sh)
 
   ```
-  $ curl -LO https://raw.githubusercontent.com/ALIHAIDER998/zphisher/master/run-docker.sh
+  $ curl -LO https://raw.githubusercontent.com/alihaider998/camhack/master/run-docker.sh
   $ bash run-docker.sh
   ```
 - Temporary Container
 
   ```
-  docker run --rm -ti ALIHAIDER998/zphisher
+  docker run --rm -ti alihaider998/camhack
   ```
   - Remember to mount the `auth` directory.
 
@@ -129,12 +129,12 @@ $ zphisher
 <details>
   <summary><h3>Dependencies</h3></summary>
 
-<b>Zphisher</b> requires following programs to run properly - 
+<b>Camhack</b> requires following programs to run properly - 
 - `git`
 - `curl`
 - `php`
 
-> All the dependencies will be installed automatically when you run **Zphisher** for the first time.
+> All the dependencies will be installed automatically when you run **Camhack** for the first time.
 </details>
 
 <details>
@@ -164,4 +164,5 @@ $ zphisher
 </p>
 
 <!-- // -->
+
 
