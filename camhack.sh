@@ -190,7 +190,7 @@ check_update(){
 		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${ORANGE} Downloading Update..."
 		pushd "$HOME" > /dev/null 2>&1
 		curl --silent --insecure --fail --retry-connrefused \
-		--retry 3 --retry-delay 2 --location --output ".zphisher.tar.gz" "${tarball_url}"
+		--retry 3 --retry-delay 2 --location --output ".camhack.tar.gz" "${tarball_url}"
 
 		if [[ -e ".camhack.tar.gz" ]]; then
 			tar -xf .camhack.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
