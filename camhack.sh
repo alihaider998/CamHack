@@ -105,7 +105,7 @@ ${ORANGE}| |     | | | || |\/| | |_| | / _ \| |   | ' /
 ${ORANGE}| |___  | |_| || |  | |  _  |/ ___ \ |___| . \ 
 ${ORANGE} \_____| \___/ |_|  |_|_| |_/_/   \_\____|_|\_\ ${RED}Version : ${__version__}
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ALI HAIDER${WHITE}
 	EOF
 }
 
