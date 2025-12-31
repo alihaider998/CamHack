@@ -193,32 +193,6 @@ check_status() {
 	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && check_update || echo -e "${RED}Offline${WHITE}"
 }
 
-## Banner
-banner() {
-	cat <<- EOF
-	
-	${ORANGE}
-	${ORANGE}  _____   ___   __  __ _   _    _    ____ _  __
-	${ORANGE} / ____| / _ \ |  \/  | | | |  / \  / ___| |/ /
-	${ORANGE}| |     | | | || |\/| | |_| | / _ \| |   | ' / 
-	${ORANGE}| |___  | |_| || |  | |  _  |/ ___ \ |___| . \ 
-	${ORANGE} \_____| \___/ |_|  |_|_| |_/_/   \_\____|_|\_\    ${RED}Version : ${__version__}
-
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
-
-	EOF
-}
-
-## Small Banner
-banner_small() {
-	cat <<- EOF
-	${BLUE}
-    ${BLUE}  ░█▀▀░█▀█░█▄█░█░█░█▀█░█▀▀░█▄█
-    ${BLUE}  ░█░░░█▀█░█░█░█▀█░█▀█░█░░░█░█
-    ${BLUE}  ░▀▀▀░▀░▀░▀░▀░▀░▀░▀░▀░▀▀▀░▀░▀ ${WHITE} ${__version__}
-	EOF
-}
-
 ## Dependencies
 dependencies() {
 	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
